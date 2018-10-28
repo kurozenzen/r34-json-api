@@ -62,8 +62,8 @@ tagRouter.get('/', function (req, res) {
 
                 return tags;
             },
-            function (comments) {
-                res.json(comments);
+            function (tags) {
+                res.json(tags);
             });
     } catch (err) {
         console.log(err);

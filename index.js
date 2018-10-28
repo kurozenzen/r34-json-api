@@ -19,6 +19,7 @@ const postRouter = require('./routing/posts');
 const tagRouter = require("./routing/tags");
 const imageRouter = require("./routing/images");
 const artistRouter = require("./routing/artists");
+const aliasRouter = require("./routing/alias");
 
 // assign routers
 app.use('/', defaultRouter);
@@ -27,6 +28,7 @@ app.use('/posts', postRouter);
 app.use("/tags", tagRouter);
 app.use("/images", imageRouter);
 app.use("/artists", artistRouter);
+app.use("/alias", aliasRouter);
 
 app.use('/c', commentRouter);
 app.use('/p', postRouter);
