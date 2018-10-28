@@ -1,7 +1,7 @@
 # Rule34 Json API
 This is a small web-api that implements all functionalities of the original rule34 api, but instead of xml it provides json.
 
-The app is [hosted on heroku](https://r34-json-api.herokuapp.com) for simple access and usage.
+The app is [hosted on heroku](https://custom-r34-api.herokuapp.com) for simple access and usage.
 
 ## Posts
 Posts can be accessed with ```/posts``` or ```/p```.
