@@ -6,7 +6,7 @@ const baseUrl = 'https://rule34.xxx/index.php?page=dapi&s=post&q=index';
 
 defaultRouter.get('/', function (req, res) {
     res.json({
-        message: "This is a wrapper for the rule34 api. For more info see https://github.com/KuroZen/r34-json-api#readme",
+        message: "This is a wrapper for the rule34 api. For more info see https://github.com/kurozenzen/r34-json-api#readme",
         posts: process.env.HOST + "/posts",
         comments: process.env.HOST + "/comments",
         tags: process.env.HOST + "/tags",
