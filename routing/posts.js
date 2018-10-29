@@ -30,6 +30,16 @@ postRouter.get('/', function (req, res) {
                         result.type = "image";
                     }
 
+                    // modify rating
+                    switch (result.rating) {
+                        case "E":
+                            result.rating = "Explicit";
+                            break;
+                        case "Q":
+                            result.rating = "Questionable"
+                            break;
+                    }
+
                     //modify urls
                     result.file_url = process.env.HOST + "/images?url=" + result.file_url;
                     result.preview_url = process.env.HOST + "/images?url=" + result.preview_url;
