@@ -32,11 +32,14 @@ postRouter.get('/', function (req, res) {
 
                     // modify rating
                     switch (result.rating) {
-                        case "E":
-                            result.rating = "Explicit";
+                        case "s":
+                            result.rating = "Safe";
                             break;
-                        case "Q":
+                        case "q":
                             result.rating = "Questionable"
+                            break;
+                        case "e":
+                            result.rating = "Explicit";
                             break;
                     }
 
