@@ -19,7 +19,7 @@ postRouter.get('/', function (req, res) {
                     // convert tags
                     result.tags = result.tags.split(" ")
                         .filter(tag => tag !== "");
-                    result.tags.filter(function (item, pos) {
+                    result.tags = result.tags.filter(function (item, pos) {
                         return result.tags.indexOf(item) == pos;
                     });
 
