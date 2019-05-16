@@ -22,6 +22,8 @@
   },
   "homepage": "https://github.com/KuroZen/r34-json-api#readme",
   "dependencies": {
+    "apicache": "1.4.0",
+    "compression": "1.7.4",
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "jquery": "^3.3.1",
