@@ -3,7 +3,6 @@
 // require packages
 const scraperjs = require('scraperjs');
 const express = require('express');
-const compression = require('compression')
 const cors = require('cors');
 
 // setup
