@@ -14,7 +14,7 @@ process.env.PORT = process.env.PORT || 8080;
 process.env.HOST = process.env.HOST || 'http://localhost:' + process.env.PORT;
 app.use(cors());
 app.use(compression());
-app.use(cache('5 minutes', (req, res) => res.statusCode === 200))
+//app.use(cache('5 minutes', (req, res) => res.statusCode === 200))
 
 // require routers
 const defaultRouter = require('./routing/default');
