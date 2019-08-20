@@ -17,7 +17,8 @@ function transformUrls(post) {
   post.comments_url = host + "/comments?post_id=" + post.id;
   post.file_url =
     host + "/images?url=" + post.file_url.replace("xxx/", "xxx//");
-  post.preview_url = host + "/images?url=" + post.preview_url;
+  post.preview_url =
+    host + "/images?url=" + post.preview_url.replace("xxx/", "xxx//");
   post.sample_url =
     host + "/images?url=" + post.sample_url.replace("xxx/", "xxx//");
   post.creator_url =
