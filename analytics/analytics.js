@@ -7,10 +7,10 @@ async function trackPosts(req, posts) {
   const tags = req.query.tags;
 
   if (tags === undefined) {
-    visitor.event("Tag", "None").send();
+    visitor.event("Tag", "Search", "None").send();
   } else {
     tags.split(" ").forEach(tag => {
-      visitor.event("Tag", tag).send();
+      visitor.event("Tag", "Search", tag).send();
     });
   }
 }
