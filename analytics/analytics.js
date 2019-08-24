@@ -9,7 +9,7 @@ async function trackPosts(req, posts) {
   if (tags === undefined) {
     visitor.event("Tag", "Search", "None").send();
   } else {
-    tags.split(" ").forEach(tag => {
+    tags.split("+").forEach(tag => {
       visitor.event("Tag", "Search", tag).send();
     });
   }
