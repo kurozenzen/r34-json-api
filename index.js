@@ -4,6 +4,7 @@
 const express = require("express");
 const cors = require("cors");
 const compression = require("compression");
+const ua = require("universal-analytics");
 
 // setup
 const app = express();
@@ -11,6 +12,7 @@ process.env.PORT = process.env.PORT || 8080;
 process.env.HOST = process.env.HOST || "http://localhost:" + process.env.PORT;
 app.use(cors());
 app.use(compression());
+app.use(ua.middleware(process.env.TRACKING_ID, { cookieName: "_ga" }));
 
 // require routers
 const defaultRouter = require("./routing/default");
