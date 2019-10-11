@@ -6,7 +6,7 @@ const postRouter = express.Router();
 
 const baseUrl = "https://rule34.xxx/index.php?page=dapi&s=post&q=index";
 
-postRouter.get("/", function(req, res, next) {
+postRouter.get("/", function(req, res) {
   try {
     scraper(getUrl(req), toPosts, function(posts) {
       res.json(posts);
@@ -18,12 +18,19 @@ postRouter.get("/", function(req, res, next) {
 });
 
 function toPosts($) {
-  return $("post")
-    .map(function() {
-      const result = transformPost(this.attribs);
-      return result;
-    })
-    .get();
+  return {
+    count: $("posts")
+      .map(function() {
+        return $(this).attr("count");
+      })
+      .get()[0],
+    posts: $("post")
+      .map(function() {
+        const result = transformPost(this.attribs);
+        return result;
+      })
+      .get()
+  };
 }
 
 function getUrl(req) {
