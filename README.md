@@ -2,7 +2,21 @@
 
 This is a small web-api that implements all functionalities of the original rule34 api, but instead of xml it provides json.
 
-The app is [hosted on heroku](https://r34-json.herokuapp.com) for simple access and usage.
+[[Check Status]](https://stats.uptimerobot.com/EZVwES34jJ)
+
+## Hosted on heroku
+
+I put it up two times for safety while i tweak stuff.
+
+1.  [r34-json.herokuapp.com](https://r34-json.herokuapp.com)
+2.  [r34-api-clone.herokuapp.com](https://r34-api-clone.herokuapp.com)
+
+## Projects
+
+Here are some projects that use the api. Let me know if you are using it and I will add your project.
+
+- [R34-Browser](https://kurozenzen.github.io/r34-react)
+- [MewtwoBot](https://github.com/sks316/mewtwo-bot)
 
 ## Structure
 
@@ -163,5 +177,3 @@ Tags are very powerful.
 - Prefixes: `score` is the most useful, others are `source`, `width`, `height`, `user`
   - `score:>100` will match post with more than 100 likes.
   - same works for the others as well
-
-If you want to see it in action, head over to https://kurozenzen.github.io/r34-react/.
