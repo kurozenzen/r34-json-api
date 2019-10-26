@@ -9,6 +9,7 @@ imageRouter.get("/", function(req, res) {
 
   const request = https.get(req.query.url, function(response) {
     res.setHeader("Content-Type", response.headers["content-type"]);
+    res.setHeader("Cache-Control", "max-age=31557600");
     response.pipe(res);
   });
 
