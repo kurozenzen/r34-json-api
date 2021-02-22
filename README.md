@@ -6,7 +6,7 @@ This is a small web-api that implements all functionalities of the original rule
 
 ## Hosted on heroku
 
-I put it up two times for safety while i tweak stuff.
+I put it up two times for safety while i tweak stuff. Please always use the first one, if it is up. The second one is only intended as a backup and might not be as reliable by default.
 
 1.  [r34-json.herokuapp.com](https://r34-json.herokuapp.com)
 2.  [r34-api-clone.herokuapp.com](https://r34-api-clone.herokuapp.com)
