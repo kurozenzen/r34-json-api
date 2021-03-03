@@ -10,7 +10,7 @@ postRouter.get("/", function(req, res) {
   try {
     scraper(getUrl(req), toPosts, function(posts) {
       res.json(posts);
-      track(req, posts);
+      track(req);
     });
   } catch (err) {
     console.log(err);

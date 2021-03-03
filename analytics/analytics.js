@@ -1,8 +1,8 @@
-async function track(req, data) {
-  if (req.baseUrl === "/posts") trackPosts(req, data);
+async function track(req) {
+  if (req.baseUrl === "/posts") trackPosts(req);
 }
 
-async function trackPosts(req, posts) {
+async function trackPosts(req) {
   const visitor = req.visitor;
   const tags = req.query.tags;
 
